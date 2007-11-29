@@ -1,0 +1,10 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=2082
+
+This is yet another script to do some code commenting/uncommenting. It is simple and easy to use, and should work for almost any filetype.
+
+It defines a command :CommentStyle which takes one argument, which can be either a comment prefix ("# " for shell) or a comment string ("/* @ */" for C) with a @ as a placeholder.
+It also defines three mappings: >c to comment, <c to uncomment, and =c to change the CommentStyle.
+
+Nested comments are handled correctly (this means that if you comment the following C code line:
+x /* comment */ ++;
+then the inner comment will be protected).
